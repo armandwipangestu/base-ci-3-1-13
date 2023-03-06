@@ -9,6 +9,7 @@
 - [Config](#config)
 - [Database](#database)
 - [.htaccess](#htaccess)
+- [Templates]()
 
 ## Autoload
 
@@ -67,4 +68,55 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L]
+```
+
+## Templates
+
+> **Folder templates**: `/application/views/templates`
+
+Dalam repository ini sudah menggunakan templates seperti bagian `header` dan `footer` sehingga bagian tag pembuka `head` dan tag penutup `body` sudah di pisah
+
+- Header
+
+```html
+<!DOCTYPE html>
+...
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><?= $title ?></title>
+
+	<!-- Memanggil CSS -->
+	<link rel="stylesheet" href="<?= base_url('assets') ?>/css/index.css" />
+
+	<!-- Memanggil CSS Bootstrap V.5.3.0 -->
+	<link
+		rel="stylesheet"
+		href="<?= base_url('assets') ?>/vendor/bootstrap/css/bootstrap.min.css"
+	/>
+
+	<!-- Memanggil CSS Fontawesome V.6.3.0 -->
+	<link rel="stylesheet" href="
+	<?= base_url("assets") ?>
+	/vendor/fontawesome/css/all.min.css">
+
+	<!-- Memanggil CSS Sweetalert V.2 -->
+	<link rel="stylesheet" href="
+	<?= base_url("assets") ?>
+	/vendor/sweetalert/css/sweetalert2.min.css">
+</head>
+...
+```
+
+- Footer
+
+```html
+    <!-- Memanggil JS Bootstrap V.5.3.0 -->
+    <script src="<?= base_url("assets") ?>/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Memanggil JS Sweetalert V.2 -->
+    <script src="<?= base_url("assets") ?>/vendor/sweetalert/js/sweetalert2.all.min.js"></script>
+</body>
+</html>
 ```
