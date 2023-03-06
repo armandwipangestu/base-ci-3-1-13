@@ -9,7 +9,9 @@
 - [Config](#config)
 - [Database](#database)
 - [.htaccess](#htaccess)
-- [Templates]()
+- [Templates](#templates)
+- [Demo](#demo)
+- [FAQs](#faqs)
 
 ## Autoload
 
@@ -120,3 +122,20 @@ Dalam repository ini sudah menggunakan templates seperti bagian `header` dan `fo
 </body>
 </html>
 ```
+
+## Demo
+
+Dalam repository ini juga sudah disediakan code demo yang sudah menjalankan bootstrap, fontawesome, dan sweetalert.
+
+Untk mengakses nya Anda bisa membuka controller berikut di url browser Anda `localhost/base-ci-3-1-13/Test`
+
+- File Controller Demo: `/application/controllers/Test.php`
+- File Views Demo: `/application/views/test.php`
+
+## FAQs
+
+- Versi berapa saja yang digunakan pada repository ini?
+
+> - Codeigniter: `v.3.1.13`
+> - Bootstrap: `v.5.3.0-alpha1-dist`
+> - Fontawesome: `v.6.3.0-web`
