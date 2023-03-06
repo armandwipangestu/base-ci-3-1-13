@@ -125,12 +125,20 @@ Dalam repository ini sudah menggunakan templates seperti bagian `header` dan `fo
 
 ## Demo
 
-Dalam repository ini juga sudah disediakan code demo yang sudah menjalankan bootstrap, fontawesome, dan sweetalert.
+> - File Controller Demo: `/application/controllers/Test.php`
+> - File Views Demo: `/application/views/test.php`
+
+Dalam repository ini juga sudah disediakan program demo yang sudah menjalankan Bootstrap, Fontawesome, dan Sweetalert.
 
 Untk mengakses nya Anda bisa membuka controller berikut di url browser Anda `localhost/base-ci-3-1-13/Test`
 
-- File Controller Demo: `/application/controllers/Test.php`
-- File Views Demo: `/application/views/test.php`
+![image](https://user-images.githubusercontent.com/64394320/223144380-3e3bb208-c3ac-4abf-9bb8-c7d34dd3eb03.png)
+
+Dapat Anda lihat pada gambar diatas:
+
+- Garis merah: Bootstrap
+- Garis kuning: Fontawesome
+- Garis hijau: Sweetalert
 
 ## FAQs
 
@@ -139,3 +147,4 @@ Untk mengakses nya Anda bisa membuka controller berikut di url browser Anda `loc
 > - Codeigniter: `v.3.1.13`
 > - Bootstrap: `v.5.3.0-alpha1-dist`
 > - Fontawesome: `v.6.3.0-web`
+> - Sweetalert: `v.2`
