@@ -136,9 +136,9 @@ Untk mengakses nya Anda bisa membuka controller berikut di url browser Anda `loc
 
 Dapat Anda lihat pada gambar diatas:
 
-- Garis merah: Bootstrap
-- Garis kuning: Fontawesome
-- Garis hijau: Sweetalert
+- Garis Merah = `Bootstrap`
+- Garis Kuning = `Fontawesome`
+- Garis Hijau = `Sweetalert`
 
 ## FAQs
 
