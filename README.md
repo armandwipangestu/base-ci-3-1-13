@@ -76,7 +76,25 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 
 > **Folder templates**: `/application/views/templates`
 
-Dalam repository ini sudah menggunakan templates seperti bagian `header` dan `footer` sehingga bagian tag pembuka `head` dan tag penutup `body` sudah di pisah
+Dalam repository ini sudah menggunakan templates seperti bagian `header` dan `footer` sehingga bagian tag pembuka `head` dan tag penutup `body` sudah di pisah. Sehingga apabila Anda ingin membuat Views baru anda cukup memanggil View Template tersebut pada Controller Anda, contoh:
+
+- Contoh memanggil View Template
+
+```php
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+Class Test extends CI_Controller {
+    public function index() {
+        $data['title'] = 'Test Load Bootstrap Etc';
+        ...
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('test', $data);
+        $this->load->view('templates/footer');
+    }
+}
+```
 
 - Header
 
