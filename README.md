@@ -5,10 +5,10 @@
 
 # Daftar Isi
 
-- [Autoload]()
-- [Config]()
-- [Database]()
-- [.htaccess]()
+- [Autoload](#autoload)
+- [Config](#config)
+- [Database](#database)
+- [.htaccess](#htaccess)
 
 ## Autoload
 
